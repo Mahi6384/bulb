@@ -6,18 +6,18 @@ let isOff = true;
 
 btn.addEventListener('click', () => {
     if(isOff) {
-        bulbOn.style.zIndex = 1
-        bulbOff.style.zIndex = 0
+        bulbOn.style.opacity = 1
+        bulbOff.style.opacity = 0
         btn.innerHTML = "Turn OFF"
-        btn.style.backgroundColor = " white"
-        btn.style.color="black"
+        btn.style.backgroundColor = "black"
+        btn.style.color="white"
         isOff = false
     } else {
-        bulbOn.style.zIndex = 0
-        bulbOff.style.zIndex = 1
+        bulbOn.style.opacity = 0
+        bulbOff.style.opacity = 1
         btn.innerHTML = "Turn ON"
-        btn.style.backgroundColor = " black"
-        btn.style.color = "white"
+        btn.style.backgroundColor = "var(--clr-neon)"
+        btn.style.color = "black"
         isOff = true
     }
 })
