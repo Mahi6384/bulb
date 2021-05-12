@@ -13,13 +13,13 @@ btn.addEventListener('click', () => {
         btn.style.color="white"
         isOff = false
        
+       
     } else {
         bulbOn.style.opacity = 0
         bulbOff.style.opacity = 1
         btn.innerHTML = "Turn ON"
         btn.style.backgroundColor = "var(--clr-neon)"
         btn.style.color = "black"
-
         isOff = true
     }
 })
